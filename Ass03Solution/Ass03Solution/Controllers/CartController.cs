@@ -1,6 +1,10 @@
 ﻿using Ass03Solution.Models;
 using BusinessObject;
+using DataAccess.Repository.MemberRepo;
+using DataAccess.Repository.OrderDetailRepo;
+using DataAccess.Repository.OrderRepo;
 using DataAccess.Repository.ProductRepo;
+using eStore.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 

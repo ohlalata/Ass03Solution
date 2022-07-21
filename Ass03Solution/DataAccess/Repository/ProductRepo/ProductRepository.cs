@@ -3,7 +3,7 @@ using DataAccess.DAO;
 
 namespace DataAccess.Repository.ProductRepo
 {
-    public class ProductRepository
+    public class ProductRepository: IProductRepository
     {
         public void AddProduct(Product product) => ProductDAO.Instance.AddProduct(product);
 
