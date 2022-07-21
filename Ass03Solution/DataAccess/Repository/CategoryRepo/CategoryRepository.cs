@@ -3,7 +3,7 @@ using DataAccess.DAO;
 
 namespace DataAccess.Repository.CategoryRepo
 {
-    public class CategoryRepository
+    public class CategoryRepository:ICategoryRepository
     {
         public void AddCategory(string categoryName) => CategoryDAO.Instance.AddCategory(categoryName);
 

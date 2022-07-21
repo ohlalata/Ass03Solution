@@ -1,6 +1,7 @@
 ﻿using BusinessObject;
 using DataAccess.Repository.OrderDetailRepo;
 using DataAccess.Repository.OrderRepo;
+using eStore.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System.ComponentModel.DataAnnotations;

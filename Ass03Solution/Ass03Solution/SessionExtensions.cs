@@ -1,4 +1,6 @@
-﻿namespace Ass03Solution
+﻿using Newtonsoft.Json;
+
+namespace Ass03Solution
 {
     public static class SessionExtensions
     {

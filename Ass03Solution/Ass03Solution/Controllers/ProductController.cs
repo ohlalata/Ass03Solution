@@ -2,6 +2,7 @@
 using DataAccess.Repository.CategoryRepo;
 using DataAccess.Repository.OrderDetailRepo;
 using DataAccess.Repository.ProductRepo;
+using eStore.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
