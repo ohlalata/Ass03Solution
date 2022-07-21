@@ -1,4 +1,5 @@
-﻿using BusinessObject;
+﻿using Ass03Solution.Models;
+using BusinessObject;
 using DataAccess.Repository.MemberRepo;
 using DataAccess.Repository.OrderDetailRepo;
 using DataAccess.Repository.OrderRepo;
