@@ -1,9 +1,4 @@
-﻿using System;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Metadata;
-
-
-namespace BusinessObject
+﻿namespace BusinessObject
 {
     public partial class SalesManagementContext : DbContext
     {
