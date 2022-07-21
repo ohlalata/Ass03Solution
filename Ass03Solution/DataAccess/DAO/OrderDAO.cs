@@ -1,4 +1,5 @@
 ﻿using BusinessObject;
+using Microsoft.EntityFrameworkCore;
 
 namespace DataAccess.DAO
 {
@@ -39,9 +40,9 @@ namespace DataAccess.DAO
             }
             return order;
         }
-        public IEnumerable<Order> GetOrders(int memberId)
+        public IEnumerable<Order>? GetOrders(int memberId)
         {
-            IEnumerable<Order> orders;
+            IEnumerable<Order>? orders = null;
 
             try
             {

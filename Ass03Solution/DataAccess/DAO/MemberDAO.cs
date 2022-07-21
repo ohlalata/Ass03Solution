@@ -1,9 +1,5 @@
 ﻿using BusinessObject;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using Microsoft.Extensions.Configuration;
 
 namespace DataAccess.DAO
 {
@@ -32,9 +28,9 @@ namespace DataAccess.DAO
         private Member GetDefaultMember()
         {
             Member Default = null;
-            using (StreamReader r = new StreamReader("appsettings.json"))
+            using (StreamReader reader = new StreamReader("appsettings.json"))
             {
-                string json = r.ReadToEnd();
+                string json = reader.ReadToEnd();
                 IConfiguration config = new ConfigurationBuilder()
                                         .SetBasePath(Directory.GetCurrentDirectory())
                                         .AddJsonFile("appsettings.json", true, true)
