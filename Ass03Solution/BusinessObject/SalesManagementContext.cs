@@ -1,4 +1,6 @@
-﻿namespace BusinessObject
+﻿using Microsoft.EntityFrameworkCore;
+
+namespace BusinessObject
 {
     public partial class SalesManagementContext : DbContext
     {
