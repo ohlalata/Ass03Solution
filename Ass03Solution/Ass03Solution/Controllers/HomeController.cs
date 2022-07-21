@@ -1,8 +1,15 @@
-﻿using Ass03Solution.Models;
+﻿using eStore.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
+using System;
+using System.Collections.Generic;
 using System.Diagnostics;
+using System.Linq;
+using System.Security.Claims;
+using System.Threading.Tasks;
 
-namespace Ass03Solution.Controllers
+namespace eStore.Controllers
 {
     public class HomeController : Controller
     {
@@ -13,9 +20,18 @@ namespace Ass03Solution.Controllers
             _logger = logger;
         }
 
+        [Authorize]
         public IActionResult Index()
         {
-            return View();
+            var name = User.Claims.SingleOrDefault(c => c.Type.Equals(ClaimTypes.Name)).Value;
+            if (name.Equals("Admin"))
+            {
+                return RedirectToAction("Index", "Member");
+            }
+            else
+            {
+                return RedirectToAction("Index", "Product");
+            }
         }
 
         public IActionResult Privacy()
