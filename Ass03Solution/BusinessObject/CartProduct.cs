@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace BusinessObject
 {
-    internal class CartProduct
+    public class CartProduct
     {
+        public int Quantity { get; set; }
+        public decimal Price { get; set; }
     }
 }
