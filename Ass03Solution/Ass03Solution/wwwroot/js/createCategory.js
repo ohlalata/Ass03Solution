@@ -22,8 +22,10 @@ document.addEventListener("DOMContentLoaded", function () {
                 },
                 success: function (data) {
                     if (data.search("successfully") > 0) {
-                        displaySuccess("Create Category successfully!! Reload the page for the change!");
-                        //location.reload();
+                        displaySuccess("Create Category successfully. Auto reload after 2s!");
+                        setTimeout(() => {
+                            location.reload();
+                        }, 2000)
                     } else {
                         displayError(data);
                     }
