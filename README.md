@@ -9,7 +9,7 @@
   - Microsoft.Extensions.Configuration.Json.
   
 ### 3. Edit connectionStrings store in "appsettings.json" file
-      "MyStoreDb": "Server=(local);uid=#{username};pwd=#{password};database=MemberDB;TrustServerCertificate=True".
+      "SalesManagement": "Server=(local);uid=#{username};pwd=#{password};database=SalesManagement;TrustServerCertificate=True".
       
 ### 4. Run migration data
 ```sh
